@@ -1,0 +1,486 @@
+* {
+  position: relative;
+  margin: 0;
+  font-family: arial;
+  font-family: 微軟正黑體;
+  /* cursor: pointer; */
+}
+.headline {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.desktop-menu {
+  text-align: center;
+  display: block;
+}
+.mobile-menu {
+  text-align: center;
+  display: none;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.876);
+  text-align: center;
+}
+.main-background img {
+  width: 100%;
+}
+.product {
+  flex: none;
+  width: 280px;
+  margin: 10px;
+  background-color: rgba(95, 95, 95, 0.137);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  flex-direction: column;
+}
+.product:hover {
+  background-color: #fff;
+  color: rgb(78, 78, 78);
+  font-weight: bold;
+}
+
+.main-news {
+  margin-top: 5px;
+  background-color: rgb(230, 230, 230);
+  text-align: center;
+  -webkit-filter: saturate(0.5);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.news-logo {
+  width: 4%;
+  padding-top: 36px;
+}
+.main-news .main-news-title {
+  font-size: 24px;
+  color: #000;
+  font-weight: 900;
+  padding-top: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.main-news-title br {
+  display: none;
+}
+.text-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-decoration .line {
+  width: 280px;
+  height: 2px;
+  background-color: #000;
+}
+
+.main-news-background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -50;
+  -webkit-filter: sepia(1);
+}
+.news-card-img {
+  border: 1px solid #fff;
+  box-shadow: 2px 5px 10px rgba(68, 68, 68, 0.5);
+  box-sizing: border-box;
+  width: 100%;
+}
+.news-card-img:hover {
+  width: 99%;
+  opacity: 0.2;
+}
+
+.news-card-row {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  z-index: 150;
+}
+.news-card {
+  padding-left: 2px;
+}
+.news-card h3 {
+  padding-top: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.card-row {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  border: 0;
+}
+.card {
+  width: 25%;
+  padding: 15px;
+  padding-bottom: 20px;
+}
+.textContent {
+  padding: 8px;
+  text-align: justify;
+}
+.textContent h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.textContent p {
+  font-size: 16px;
+}
+.student-news-card-imgbox {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+.student-imgbox {
+  width: 100%;
+}
+.card-img {
+  width: 100%;
+}
+.card-img:hover {
+  opacity: 0.5;
+}
+.desktop-student-news-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.desktop-student-news-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+  width: 14%;
+}
+.student-news-card {
+  background-color: rgb(211, 211, 211);
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  /* height: 500px; */
+  height: min-content;
+}
+.student-news-card-title h4 {
+  background-color: rgb(48, 120, 168);
+  color: #fff;
+  padding: 8px;
+  font-size: 16px;
+}
+.student-news-card-title p {
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.student-news-card-info {
+  display: flex;
+}
+.info-user-icon {
+  width: 30%;
+  height: 30%;
+}
+.info-user {
+  width: 20%;
+  height: 20%;
+}
+.user-phone {
+  width: 40%;
+  height: 40%;
+}
+.student-name {
+  display: flex;
+}
+.student-name p {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.student-date p {
+  font-size: 14px;
+}
+.student-info {
+  display: flex;
+  flex-direction: column;
+}
+.student-news-card-imgbox:hover img {
+  opacity: 0.5;
+}
+
+/* pad */
+
+.pad-student-news-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.pad-student-news-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid red; */
+  margin-left: 5px;
+  width: 50%;
+  display: none;
+}
+
+/* pad */
+.mobile-student-news-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 100%;
+  flex-wrap: wrap;
+  display: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.mobile-student-news-card {
+  width: 85%;
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 31px;
+}
+.mobile-student-news-title {
+  background-color: rgb(48, 120, 168);
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.mobile-student-news-title h1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.mobile-student-news-info p {
+  font-size: 14px;
+  padding-left: 10px;
+  margin-bottom: -6px;
+}
+.mobile-student-news-info h6 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.mobile-student-news-info {
+  display: flex;
+  align-items: baseline;
+}
+.footer {
+  padding-top: 80px;
+  text-align: center;
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+  cursor: pointer;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.footer-content h1 {
+  font-size: 24px;
+}
+.map-img {
+  width: 100%;
+}
+.map-box {
+  padding-right: 70px;
+  text-align: left;
+}
+.map-box h1 {
+  font-size: 16px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  padding-right: 50px;
+  text-align: left;
+}
+.footer-info p {
+  color: rgb(133, 133, 133);
+}
+.footer-info-title h1 {
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.info {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: rgb(85, 85, 85);
+}
+
+@media (max-width: 1250px) {
+  .list {
+    flex-wrap: wrap;
+  }
+  .headline {
+    font-size: 9px;
+  }
+  .main-background img {
+    width: 100%;
+  }
+  .product {
+    width: 45%;
+    padding: 0;
+  }
+  .news-card-img {
+    width: 93%;
+  }
+  .news-card h3 {
+    font-size: 16px;
+  }
+  .news-logo {
+    width: 8%;
+  }
+  .textContent h1 {
+    font-size: 24px;
+  }
+  .card-row {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 50%;
+  }
+  .desktop-student-news-container {
+    display: none;
+  }
+  .pad-student-news-row {
+    display: block;
+  }
+  .student-imgbox {
+    width: 80%;
+  }
+  .info-user {
+    width: 12%;
+    height: 12%;
+  }
+  .footer-info p {
+    font-size: 12px;
+  }
+  .footer-content h1 {
+    font-size: 20px;
+  }
+  .map-box {
+    padding-right: 5px;
+    text-align: center;
+  }
+  .info p {
+    font-size: 14px;
+  }
+  .map-img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .headline {
+    font-size: 20px;
+  }
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .main-background img {
+    width: 100%;
+  }
+  .product {
+    width: 90%;
+    text-align: center;
+    background-color: #000;
+  }
+  .main-news {
+    padding-bottom: 1px;
+  }
+  .news-card h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .card-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .textContent h1 {
+    font-size: 20px;
+  }
+  .textContent p {
+    font-size: 12px;
+  }
+  .text-decoration .main-news-title {
+    font-size: 14px;
+  }
+  .student-news-card {
+    width: 90%;
+  }
+  .info-user {
+    width: 12%;
+    height: 12%;
+  }
+  .headline {
+    font-size: 8px;
+  }
+  .footer-info {
+    display: none;
+  }
+  .footer-content h1 {
+    font-size: 16px;
+  }
+  .info p {
+    font-size: 14px;
+  }
+  .map-box {
+    padding-right: 5px;
+    text-align: center;
+  }
+  .map-img {
+    width: 90%;
+  }
+  .desktop-student-news-row {
+    display: none;
+  }
+  .pad-student-news-container {
+    display: none;
+  }
+  .mobile-student-news-row {
+    display: block;
+  }
+}
